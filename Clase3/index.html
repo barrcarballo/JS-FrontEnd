@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+</head>
+<body>
+     <!-- TABLAS -->
+    <h1>Tablas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="6">Calender</th>
+            </tr>
+        </thead>
+       <tbody>
+            <tr>
+                <td rowspan="4">schedule</td>
+                <td>mon</td>
+                <td>tue</td>
+                <td>wen</td>
+                <td>thu</td>
+                <td>fri</td>
+            </tr>
+            <tr>
+                <td>facultad</td>
+                <td>facultad</td>
+                <td>virtual</td>
+                <td>virtual</td>
+                <td>descanso</td>
+            </tr>
+            <tr>
+                <td>facultad</td>
+                <td>facultad</td>
+                <td>virtual</td>
+                <td>virtual</td>
+                <td>descanso</td>
+            </tr>
+       </tbody>
+       <tfoot>
+            <tr>
+                <th colspan="6">fin</th>
+            </tr>
+       </tfoot>
+       </table>
+
+       <!-- FORMULARIOS -->
+       <h1>Forms</h1>
+       <form action="#" method="POST">
+            <fieldset>
+                <legend>Formulario de registro - Ingrese sus datos</legend>
+                <label for="name">name:</label>
+                <input type="text" name="name">  
+                <br>
+                <label for="lastname">lastname:</label>
+                <input type="text" name="lastname">    
+                <br>
+                <button type="submit">send</button>
+        </fieldset>
+       </form>
+       <form action="#" method="POST">
+        <fieldset>
+            <legend>
+                <h2>Formulario de registro - Ingrese sus datos</h2>
+            </legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required minlength="3" maxlength="12">
+            </p>
+            <p>
+                <label for="lastname">Lastame:</label>
+                <input type="text" name="lastname" id="lastname" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="usuario@cuenta.com" pattern="/" required> 
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-123-123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> 
+            </p>
+            <p>
+                <label for="postCod">Codepostal:</label>
+                <input type="number" name="postCod" id="postCod" required> 
+            </p>
+            <p>
+                <label for="date">Date of birth:</label>
+                <input type="date" name="date" id="date" required> 
+            </p>
+            <p>
+                <label for="studies">Studies:</label>
+                <input type="radio" name="studies" id="1"> Primary
+                <input type="radio" name="studies" id="2"> Secondary
+                <input type="radio" name="studies" id="3"> University
+
+            </p>
+            <p>
+                <label for="ocuppation">Ocuppation:</label>
+                <select name="ocuppation" id="ocuppation">
+                    <optgroup>
+                        <option value="0"></option>
+                        <option value="1">Student</option>
+                        <option value="2">Worker</option>
+                        <option value="3">Retired</option>
+                        <option value="4">Unemployed</option>
+                    </optgroup>
+                </select>
+                <!-- SELECCIONAR MULTIPLES OPCIONES-->
+                <select multiple="true" id="">
+                    <optgroup>
+                        <option value="0"></option>
+                        <option value="1">Student</option>
+                        <option value="2">Worker</option>
+                        <option value="3">Retired</option>
+                        <option value="4">Unemployed</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="knowledge">Knowledge:</label>
+                <input type="checkbox" name="html" class="knowledge"> HTML 
+                <input type="checkbox" name="css" class="knowledge"> CSS
+                <input type="checkbox" name="js" class="knowledge"> JS
+            </p>
+            <p>
+                <label for="img">Profile pic:</label>
+                <input type="file" name="img" id="img">
+            </p>
+            <p>
+                <label for="">Password:</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <label for="">Description:</label>
+                <textarea name="" id=""></textarea>
+            </p>
+            <button>
+                <label for="send" type="submit">Send</label>
+            </button>
+            <button>
+                <label for="" type="">Clean all</label>
+            </button>
+        </fieldset>
+       </form>
+</body>
+</html>
