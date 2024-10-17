@@ -1,0 +1,23 @@
+body, h1, div, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightblue;
+
+}
+
+.container p{
+    color: blueviolet;
+}
+
+body{
+    .container{
+        p{
+            background-color: black;
+        }
+    }
+}
+
+.container + p {
+    background-color: blue;
+}

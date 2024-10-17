@@ -1,0 +1,17 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1{
+    color: red;
+}
+p{
+    color: blueviolet;
+}
+.p1{
+    color: white;
+    background-color: black;
+}
